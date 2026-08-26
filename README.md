@@ -77,7 +77,11 @@ stretch them:
 | banff | 309 x 129 | 860 x 359 |
 | island / aurora / city / lagoon | 311 x ~90 | already large enough, untouched |
 
-Total image weight: **about 1 MB**.
+Sharpening is deliberately light. An earlier build used a strong unsharp mask,
+which put speckle into flat areas such as the Tokyo night sky - that grain is
+what reads as "pixelated". A gentle pass keeps definition without the crunch.
+
+Saved at JPEG quality 95. Total image weight: **about 1 MB**.
 
 **For true HD there is one thing only the source can give:** the full-size
 originals of those five photos. Sharpening recovers definition, but it cannot
