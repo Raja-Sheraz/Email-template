@@ -59,6 +59,47 @@ be exported again:
 
 ---
 
+## Round of changes from Sir (27 Aug)
+
+| Asked | Done |
+|---|---|
+| *"Inko left right karkay dekhao"* | Tickets now alternate: **01 photo-right, 02 photo-left, 03 photo-right, 04 photo-left** |
+| *"Heading font humara wala karo"* | The hero headline is no longer baked into a photo. It is live text in **56th Street**, the site's own display face, over a clean image |
+| *"Trvler.co logo wla lagao"* | Real logo bar at the top, from `footer-logo-hd.png`, recoloured navy for the light background |
+| *"Images change ho saktay hain"* | Every photo replaced with a genuinely high-resolution one from trvler.co's own library |
+
+### Photos, and why each one
+
+Every photo now comes from trvler.co's own library - real destinations the site
+already covers, and every one cropped **down** from a larger original, so the
+detail is real rather than stretched.
+
+| Section | Photo | Source size |
+|---|---|---|
+| Hero | Moraine Lake, Banff | 1100 x 1646 |
+| 01 Travel Updates | aerial turquoise water, paddleboarders | 3000 x 1144 |
+| 02 Videos | Pont Alexandre III at dusk | 1920 x 1358 |
+| 03 Shorts | misty forest bridge | 3000 x 1144 |
+| 04 Exclusive Stories | forest river, Canadian Rockies | 1600 x 600 |
+| Gallery | Cancun / San Francisco / Halifax / Mexico City | 1440x806, 1000x666, **8177 x 5451**, 1916 x 821 |
+
+Captions match their pictures. The hero says **ARRIVED / CANADA / BANFF** and
+shows Moraine Lake, which is in Banff. Card 02 was relabelled from Tokyo to
+**PARIS, FRANCE** because the photo is Paris - a caption should never contradict
+its picture. Card 04's **BANFF** stub sits over a Canadian Rockies river.
+
+The gallery was rebuilt twice: Sir's originals were 311 x 90 wide strips being
+cropped square, a 2.5x blow-up, and the first replacement set came out too dark.
+The four now in place are the brightest destination shots on the site.
+
+### Two typos that fixed themselves
+
+The hero used to be a flat image with the text burnt in, and that image carried
+**"DVENTURE AWAITS"** (missing A) and a wrong Banff latitude. Now that the hero
+text is live HTML, both read correctly.
+
+---
+
 ## Image quality
 
 Every section ships at **1200px** wide and displays at 600px — 2x on a laptop,
