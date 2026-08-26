@@ -59,6 +59,32 @@ be exported again:
 
 ---
 
+## Fonts — trvler.co's own
+
+The original package used Georgia and Arial Narrow. Everything now uses the
+site's real typefaces:
+
+| Where | Font |
+|---|---|
+| Ticket labels (TRAVEL UPDATES, VIDEOS, SHORTS, EXCLUSIVE STORIES), the 01-04 numerals, YOUR JOURNEY STARTS HERE | **56th Street** — the site's display face, loaded from `app/assets/fonts/56thStreet-Regular.otf` |
+| Headings, paragraphs, coordinates, stamps, footer | **Plus Jakarta Sans** — the site's body face |
+
+Email clients cannot load custom fonts as live text. It works here because
+these sections ship as **images**, so the real brand fonts are baked into the
+artwork. The handful of live text lines name Plus Jakarta Sans first and fall
+back to Arial.
+
+## Text alignment
+
+`The world is waiting—and<br>you're officially in.` had a hard line break that
+stranded **"—and"** alone on the second line. The break and the dash are gone:
+
+> The world is waiting, and you're officially in.
+
+It now sets as two balanced lines on a laptop and on a phone.
+
+---
+
 ## Where every link goes
 
 | Section | Link |
