@@ -131,6 +131,33 @@ around 1200-1500px wide, they can be dropped straight in and re-rendered.
 
 ---
 
+## Ticket detail (Sir's round, 27 Aug)
+
+Sir marked three things as missing against his original mock. All three are back:
+
+| Marked | Now |
+|---|---|
+| **Barcode on card 01** | A real barcode &mdash; bars of varying width, not evenly spaced lines &mdash; sitting in its own stub behind a dashed perforation. Generated, not downloaded, so the colour and size are exact. |
+| **Pink hatched square on card 02** | Back, beside the plane glyph, in brand pink |
+| **BANFF / SAHARA route stub on card 04** | Present, mirrored to the left because card 04 is a flipped ticket |
+
+### Torn edges
+
+Sir: *"edges look like ticket"*. A ticket stub is not notched at the corners &mdash;
+it has a row of small bites down the whole edge. Each card now tears on
+**exactly one edge**, following the zigzag, and **never on the photo side**:
+
+| Card | Tears on | Which side that is |
+|---|---|---|
+| 01 | left | past the barcode stub |
+| 02 | right | the text panel |
+| 03 | left | the text panel |
+| 04 | left | the route-stub side |
+
+Biting every edge of every card looked busy; one edge each reads as deliberate.
+
+---
+
 ## Fonts — trvler.co's own
 
 The original package used Georgia and Arial Narrow. Everything now uses the
