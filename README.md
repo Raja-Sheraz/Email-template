@@ -59,6 +59,33 @@ be exported again:
 
 ---
 
+## Image quality
+
+Every section ships at **1200px** wide and displays at 600px — 2x on a laptop,
+over 3x on a phone. Saved at JPEG quality 94.
+
+The photos inside the original package were small, so they were upsampled with
+Lanczos and sharpened **before** rendering, rather than letting the browser
+stretch them:
+
+| Photo | In the package | Prepared at |
+|---|---|---|
+| hero | 641 x 264 | 1500 x 618 |
+| coast | 376 x 144 | 900 x 345 |
+| tokyo | 379 x 117 | 900 x 278 |
+| desert | 480 x 131 | 900 x 246 |
+| banff | 309 x 129 | 860 x 359 |
+| island / aurora / city / lagoon | 311 x ~90 | already large enough, untouched |
+
+Total image weight: **about 1 MB**.
+
+**For true HD there is one thing only the source can give:** the full-size
+originals of those five photos. Sharpening recovers definition, but it cannot
+put back detail that was never in a 309px file. If the originals are exported at
+around 1200-1500px wide, they can be dropped straight in and re-rendered.
+
+---
+
 ## Fonts — trvler.co's own
 
 The original package used Georgia and Arial Narrow. Everything now uses the
