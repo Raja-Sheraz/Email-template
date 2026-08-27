@@ -137,7 +137,7 @@ Sir marked three things as missing against his original mock. All three are back
 
 | Marked | Now |
 |---|---|
-| **Barcode on card 01** | A real barcode &mdash; bars of varying width, not evenly spaced lines &mdash; sitting in its own stub behind a dashed perforation. Generated, not downloaded, so the colour and size are exact. |
+| **Barcode on card 01** | A real barcode &mdash; bars of varying width, not evenly spaced lines &mdash; in its own stub behind a dashed perforation. Generated, not downloaded, so the colour and size are exact. Sir asked for the **lines horizontal, not vertical**, with the stub staying tall and narrow as in the original - so the bars run across and stack top to bottom. |
 | **Pink hatched square on card 02** | Back, beside the plane glyph, in brand pink |
 | **BANFF / SAHARA route stub on card 04** | Present, mirrored to the left because card 04 is a flipped ticket |
 
@@ -213,7 +213,7 @@ exactly that reason — please do not shorten them.
 
 ## Putting it into beehiiv
 
-1. Upload all 15 files from `img/` to **Newsletter → Media library**.
+1. Upload all 16 files from `img/` to **Newsletter → Media library**.
 2. Replace every `src="img/..."` with the URL beehiiv returns.
 3. **Settings → Emails → Configure welcome email** → add a **Custom HTML** block
    → paste everything between `PASTE FROM HERE` and `PASTE UNTIL HERE`.
@@ -225,11 +225,40 @@ beehiiv attaches its own legal footer underneath automatically.
 
 ---
 
+## The ticket cards
+
+Sir's design was measured pixel by pixel rather than eyeballed, because the
+two long edges of a card are **not** the same shape and that difference is
+what makes the card read as a real boarding pass:
+
+| | Sir's design | This build |
+|---|---|---|
+| Card height, as a share of its width | 0.18 | 0.20 |
+| Photo edge | three round punches, 6px deep, 7px radius | round punches, 6px deep, 38px apart |
+| Copy edge | wider excursions at irregular spacing - a torn edge | two tear tracks at 27px and 41px, so the bites never repeat |
+| Corners | rounded | rounded, 14px |
+| Punch runs over the photo too | yes | yes |
+
+Because the cards zigzag, the punched side **follows the photo**: right on cards
+01 and 03, left on the flipped 02 and 04. The torn edge is always the copy side.
+
+The cards were also slimmed from 152px to 120px. At the old height they were
+a quarter taller than the design and read as banners rather than tickets;
+120px is as slim as the headings can go and still be legible on a phone.
+
+Card 02 sets its number and its word on one line, the way Sir's does - that
+is what makes room for all three coordinate lines inside the shorter card.
+
+Card 01 now carries the circular passport roundel from the design, and card
+04's route stub is the wide two-column manifest rather than a narrow strip.
+
+---
+
 ## Checked on
 
 | | Desktop 700px | Phone 390px |
 |---|---|---|
 | Horizontal overflow | none | none |
-| Images loading | 15 / 15 | 15 / 15 |
-| Links working | 13 / 13 | 13 / 13 |
+| Images loading | 16 / 16 | 16 / 16 |
+| Links working | 14 / 14 | 14 / 14 |
 | Six social icons | all visible | all visible |
