@@ -1,234 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="x-apple-disable-message-reformatting">
 <title>Welcome to The Trvler.co Magazine</title>
+<!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+<style>
+  /* Har section Figma ke APNE SVG export se kaata gaya hai, 2x par render
+     kar ke. Yani yeh design ka hu-ba-hu aks hai. Headings tasveer mein
+     isi liye hain ke email clients custom font (56th Street) load nahi karte. */
+  body{margin:0;padding:0;background:#FFFFFF}
+  img{-ms-interpolation-mode:bicubic}
+  a{text-decoration:none}
+</style>
 </head>
-<!--
-  ─────────────────────────────────────────────────────────────────────────
-  THE TRVLER.CO MAGAZINE — beehiiv WELCOME EMAIL
-  Built from Sir's boarding-pass design (desktop + mobile HTML/CSS package).
-  ONE file. Works on desktop, tablet and phone.
-  ─────────────────────────────────────────────────────────────────────────
-
-  HOW IT WAS BUILT
-  Sir's design uses CSS the way a web page does - torn ticket edges, dashed
-  perforations, barcodes, round stamps, radial gradients and clip-path.
-  None of that survives in Gmail or Outlook. So the design was rendered in a
-  real browser at 1200px (2x of 600) and each section captured as one crisp
-  image. Those images are then laid out with plain email tables and real links.
-  The result looks identical to the design but behaves like an email.
-
-  THREE BUGS FIXED FROM THE ORIGINAL PACKAGE
-  1. Everything printed twice. hero.png already contains the headline, the
-     stamps and the plane trail; the HTML drew them a second time on top.
-     Same with coast.png, which carries the "TRAVEL UPDATES" text and the
-     CAPRI stamp inside the artwork. Both overlays are now suppressed.
-  2. Wrong coordinates. BANFF / CANADA was labelled with London's numbers
-     (51.4968 N, 0.1224 W). Now 51.1784 N, 115.5708 W. Sahara / Morocco was
-     also wrong; now 31.7917 N, 7.0926 W.
-  3. The page header (logo bar + hamburger menu) was removed - an email has
-     no navigation.
-
-  STILL WORTH FIXING AT SOURCE (baked into hero.png, cannot be edited here)
-  - The round stamp reads "DVENTURE AWAITS" - the A is missing.
-  - The Banff stamp inside the photo still shows 48.6467 N (should be 51.1784).
-
-  ─────────────────────────────────────────────────────────────────────────
-  HOW TO PUT THIS IN BEEHIIV
-  1. Upload all 15 files from "img" to Newsletter -> Media library.
-  2. Replace every src="img/..." below with the URL beehiiv returns.
-  3. Settings -> Emails -> Configure welcome email -> Custom HTML block ->
-     paste everything between "PASTE FROM HERE" and "PASTE UNTIL HERE".
-  4. Send a test to the TEST segment. Open it on a phone. Click every link.
-  5. Turn the welcome toggle ON only after mail.trvler.co verifies.
-
-  IMPORTANT
-  This design carries most of its words inside images. Gmail blocks images
-  for unknown senders, so every alt="" below is written to carry the message
-  on its own. Do not delete or shorten them.
--->
-<body style="margin:0; padding:0; background-color:#f7f7f6;">
-
-<!-- ============ PASTE FROM HERE ============ -->
-
-<div style="display:none; font-size:1px; color:#f7f7f6; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden;">
-  You're officially in. Here's what's waiting for you at Trvler.co.
-</div>
-
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f7f7f6; margin:0; padding:0;">
-<tr>
-<td align="center" style="padding:20px 10px;">
-
-  <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:600px; font-family:'Plus Jakarta Sans',Arial,Helvetica,sans-serif;">
-
-    <!-- ══ BRAND BAR — Sir: "Trvler.co logo wla lagao" ════════════════ -->
+<body style="margin:0;padding:0;background:#FFFFFF;">
+  <div style="display:none;max-height:0;overflow:hidden;opacity:0;mso-hide:all;">
+    The Magazine launches 1 October 2026. Here&rsquo;s what to expect.
+  </div>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+         style="background:#FFFFFF;margin:0;padding:0;">
     <tr>
-      <td style="font-size:0; line-height:0;">
-        <a href="https://trvler.co?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=welcome">
-          <img src="img/brand.jpg" width="600" alt="Trvler.co"
-               style="display:block; width:100%; max-width:600px; height:auto; border:0; border-radius:14px;">
-        </a>
-      </td>
-    </tr>
-
-    <!-- ══ HERO ════════════════════════════════════════════════════════ -->
-    <tr>
-      <td style="padding-top:12px; font-size:0; line-height:0;">
-        <a href="https://trvler.co?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=welcome">
-          <img src="img/hero.jpg" width="600" alt="Welcome to The Trvler.co Magazine"
-               style="display:block; width:100%; max-width:600px; height:auto; border:0; border-radius:14px;">
-        </a>
-      </td>
-    </tr>
-
-    <!-- ══ INTRO TICKET ════════════════════════════════════════════════ -->
-    <tr>
-      <td style="padding-top:12px; font-size:0; line-height:0;">
-        <img src="img/intro.jpg" width="600"
-             alt="The world is waiting and you're officially in. Extraordinary destinations. Unforgettable journeys. Stories that move you."
-             style="display:block; width:100%; max-width:600px; height:auto; border:0; border-radius:14px;">
-      </td>
-    </tr>
-
-    <!-- ══ 01 TRAVEL UPDATES ═══════════════════════════════════════════ -->
-    <tr>
-      <td style="padding-top:12px; font-size:0; line-height:0;">
-        <a href="https://trvler.co/blog?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=welcome">
-          <img src="img/t1.jpg" width="600" alt="01 Travel Updates"
-               style="display:block; width:100%; max-width:600px; height:auto; border:0; border-radius:14px;">
-        </a>
-      </td>
-    </tr>
-
-    <!-- ══ 02 VIDEOS ═══════════════════════════════════════════════════ -->
-    <tr>
-      <td style="padding-top:12px; font-size:0; line-height:0;">
-        <a href="https://trvler.co/video?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=welcome">
-          <img src="img/t2.jpg" width="600" alt="02 Videos"
-               style="display:block; width:100%; max-width:600px; height:auto; border:0; border-radius:14px;">
-        </a>
-      </td>
-    </tr>
-
-    <!-- ══ 03 SHORTS ═══════════════════════════════════════════════════ -->
-    <tr>
-      <td style="padding-top:12px; font-size:0; line-height:0;">
-        <a href="https://www.youtube.com/@trvler-co/shorts">
-          <img src="img/t3.jpg" width="600" alt="03 Shorts"
-               style="display:block; width:100%; max-width:600px; height:auto; border:0; border-radius:14px;">
-        </a>
-      </td>
-    </tr>
-
-    <!-- ══ 04 EXCLUSIVE STORIES ════════════════════════════════════════ -->
-    <tr>
-      <td style="padding-top:12px; font-size:0; line-height:0;">
-        <a href="https://trvler.co/blog?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=welcome">
-          <img src="img/t4.jpg" width="600" alt="04 Exclusive Stories"
-               style="display:block; width:100%; max-width:600px; height:auto; border:0; border-radius:14px;">
-        </a>
-      </td>
-    </tr>
-
-    <!-- ══ YOUR JOURNEY STARTS HERE ════════════════════════════════════ -->
-    <tr>
-      <td style="padding-top:14px; font-size:0; line-height:0;">
-        <a href="https://trvler.co?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=welcome">
-          <img src="img/journey.jpg" width="600"
-               alt="Your journey starts here. Your first edition will arrive soon. Start exploring Trvler.co"
-               style="display:block; width:100%; max-width:600px; height:auto; border:0; border-radius:14px;">
-        </a>
-      </td>
-    </tr>
-
-    <!-- ══ GALLERY ═════════════════════════════════════════════════════ -->
-    <tr>
-      <td style="padding-top:14px; font-size:0; line-height:0;">
-        <a href="https://trvler.co?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=welcome">
-          <img src="img/gallery.jpg" width="600" alt="Featured destinations from Trvler.co"
-               style="display:block; width:100%; max-width:600px; height:auto; border:0; border-radius:14px;">
-        </a>
-      </td>
-    </tr>
-
-    <!-- ══ FOOTER — real text, real icons ══════════════════════════════ -->
-    <tr>
-      <td align="center" style="padding:30px 10px 0;">
-        <div style="font-family:Arial,sans-serif; font-size:12px; font-weight:bold; color:#062a4d; letter-spacing:2px; text-transform:uppercase; padding-bottom:15px;">
-          Follow Trvler.co
-        </div>
-        <!-- Each icon is its own image inside its own link, so every one of
-             the six stays clickable and keeps a readable alt name. -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;">
-          <tr>
-            <td style="padding:0 4px; font-size:0; line-height:0;">
-              <a href="https://www.instagram.com/trvler.co/"><img src="img/s-ig.png" width="38" height="38" alt="Instagram" style="display:block; width:38px; height:38px; border:0;"></a>
-            </td>
-            <td style="padding:0 4px; font-size:0; line-height:0;">
-              <a href="https://www.facebook.com/trvler.co"><img src="img/s-fb.png" width="38" height="38" alt="Facebook" style="display:block; width:38px; height:38px; border:0;"></a>
-            </td>
-            <td style="padding:0 4px; font-size:0; line-height:0;">
-              <a href="https://www.tiktok.com/@trvler.co"><img src="img/s-tt.png" width="38" height="38" alt="TikTok" style="display:block; width:38px; height:38px; border:0;"></a>
-            </td>
-            <td style="padding:0 4px; font-size:0; line-height:0;">
-              <a href="https://www.youtube.com/@trvler-co"><img src="img/s-yt.png" width="38" height="38" alt="YouTube" style="display:block; width:38px; height:38px; border:0;"></a>
-            </td>
-            <td style="padding:0 4px; font-size:0; line-height:0;">
-              <a href="https://x.com/Trvler_co"><img src="img/s-x.png" width="38" height="38" alt="X" style="display:block; width:38px; height:38px; border:0;"></a>
-            </td>
-            <td style="padding:0 4px; font-size:0; line-height:0;">
-              <a href="https://ca.pinterest.com/trvlerco/"><img src="img/s-pi.png" width="38" height="38" alt="Pinterest" style="display:block; width:38px; height:38px; border:0;"></a>
-            </td>
-          </tr>
+      <td align="center" style="padding:0;">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"
+               style="width:600px;max-width:600px;border-collapse:collapse;">
+        <tr>
+          <td style="padding:0;font-size:0;line-height:0;">
+            <a href="https://trvler.co?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=welcome" target="_blank" title="Visit trvler.co"><img src="img/a-header.jpg" width="600" height="72" alt="TRVLER.CO" title="Visit trvler.co"
+                   style="display:block;width:100%;max-width:600px;height:auto;border:0;"></a>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0;font-size:0;line-height:0;">
+            <img src="img/b-hero.jpg" width="600" height="270" alt="Welcome to The Trvler.co Magazine"
+                   style="display:block;width:100%;max-width:600px;height:auto;border:0;">
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0;font-size:0;line-height:0;">
+            <img src="img/c-intro.jpg" width="600" height="180" alt="The world is waiting - and you're officially in."
+                   style="display:block;width:100%;max-width:600px;height:auto;border:0;">
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0;font-size:0;line-height:0;">
+            <a href="https://trvler.co/blog?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=welcome" target="_blank" title="01 - Read the latest travel updates on our blog"><img src="img/d-card1.jpg" width="600" height="134" alt="01 Travel Updates" title="01 - Read the latest travel updates on our blog"
+                   style="display:block;width:100%;max-width:600px;height:auto;border:0;"></a>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0;font-size:0;line-height:0;">
+            <a href="https://trvler.co/video?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=welcome" target="_blank" title="02 - Watch our travel videos"><img src="img/e-card2.jpg" width="600" height="133" alt="02 Videos - Tokyo, Japan" title="02 - Watch our travel videos"
+                   style="display:block;width:100%;max-width:600px;height:auto;border:0;"></a>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0;font-size:0;line-height:0;">
+            <a href="https://www.youtube.com/@trvler-co/shorts" target="_blank" title="03 - Watch shorts on YouTube"><img src="img/f-card3.jpg" width="600" height="132" alt="03 Shorts" title="03 - Watch shorts on YouTube"
+                   style="display:block;width:100%;max-width:600px;height:auto;border:0;"></a>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0;font-size:0;line-height:0;">
+            <a href="https://trvler.co/blog?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=welcome" target="_blank" title="04 - Read exclusive stories on our blog"><img src="img/g-card4.jpg" width="600" height="133" alt="04 Exclusive Stories" title="04 - Read exclusive stories on our blog"
+                   style="display:block;width:100%;max-width:600px;height:auto;border:0;"></a>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0;font-size:0;line-height:0;">
+            <a href="https://trvler.co?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=welcome" target="_blank" title="Start exploring trvler.co"><img src="img/h-cta.jpg" width="600" height="151" alt="Your journey starts here - start exploring" title="Start exploring trvler.co"
+                   style="display:block;width:100%;max-width:600px;height:auto;border:0;"></a>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0;font-size:0;line-height:0;">
+            <a href="https://trvler.co/blog?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=welcome" target="_blank" title="Explore more on our blog"><img src="img/i-gallery.jpg" width="600" height="219" alt="Destinations from the Trvler.co Magazine" title="Explore more on our blog"
+                   style="display:block;width:100%;max-width:600px;height:auto;border:0;"></a>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0;font-size:0;line-height:0;">
+            <img src="img/j-follow.jpg" width="600" height="24" alt="Follow Trvler.co"
+                   style="display:block;width:100%;max-width:600px;height:auto;border:0;">
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0;font-size:0;line-height:0;">
+            <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"
+                   style="width:100%;max-width:600px;border-collapse:collapse;">
+              <tr>
+              <td width="206" style="padding:0;font-size:0;line-height:0;">
+                <a href="https://www.facebook.com/trvler.co" target="_blank" title="Trvler.co on Facebook"><img src="img/s1.jpg" width="206" height="34" alt="Facebook" title="Trvler.co on Facebook" style="display:block;width:100%;height:auto;border:0;"></a>
+              </td>
+              <td width="48" style="padding:0;font-size:0;line-height:0;">
+                <a href="https://www.instagram.com/trvler.co/" target="_blank" title="Trvler.co on Instagram"><img src="img/s2.jpg" width="48" height="35" alt="Instagram" title="Trvler.co on Instagram" style="display:block;width:100%;height:auto;border:0;"></a>
+              </td>
+              <td width="48" style="padding:0;font-size:0;line-height:0;">
+                <a href="https://www.tiktok.com/@trvler.co" target="_blank" title="Trvler.co on TikTok"><img src="img/s3.jpg" width="48" height="35" alt="TikTok" title="Trvler.co on TikTok" style="display:block;width:100%;height:auto;border:0;"></a>
+              </td>
+              <td width="48" style="padding:0;font-size:0;line-height:0;">
+                <a href="https://www.youtube.com/@trvler-co" target="_blank" title="Trvler.co on YouTube"><img src="img/s4.jpg" width="48" height="35" alt="YouTube" title="Trvler.co on YouTube" style="display:block;width:100%;height:auto;border:0;"></a>
+              </td>
+              <td width="48" style="padding:0;font-size:0;line-height:0;">
+                <a href="https://x.com/Trvler_co" target="_blank" title="Trvler.co on X"><img src="img/s5.jpg" width="48" height="35" alt="X" title="Trvler.co on X" style="display:block;width:100%;height:auto;border:0;"></a>
+              </td>
+              <td width="206" style="padding:0;font-size:0;line-height:0;">
+                <a href="https://ca.pinterest.com/trvlerco/" target="_blank" title="Trvler.co on Pinterest"><img src="img/s6.jpg" width="206" height="34" alt="Pinterest" title="Trvler.co on Pinterest" style="display:block;width:100%;height:auto;border:0;"></a>
+              </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0;font-size:0;line-height:0;">
+            <img src="img/l-tagline.jpg" width="600" height="28" alt="Every destination has a story."
+                   style="display:block;width:100%;max-width:600px;height:auto;border:0;">
+          </td>
+        </tr>
         </table>
       </td>
     </tr>
-
-    <tr>
-      <td align="center" style="padding:14px 10px 0; font-size:0; line-height:0;">
-        <img src="img/plane.png" width="24" alt=""
-             style="display:block; width:24px; height:auto; border:0; margin:0 auto;">
-      </td>
-    </tr>
-
-    <tr>
-      <td align="center" style="padding:10px 16px 8px;">
-        <!-- non-breaking spaces inside each sentence: one line on desktop, and
-             on a phone it can only break between the two sentences -->
-        <p style="margin:0; font-family:'Plus Jakarta Sans',Arial,Helvetica,sans-serif; font-size:17px; line-height:1.5; color:#062a4d; text-align:center;">
-          Every&nbsp;destination&nbsp;has&nbsp;a&nbsp;story. Every&nbsp;journey&nbsp;creates&nbsp;one.
-        </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td align="center" style="padding:10px 16px 30px;">
-        <p style="margin:0; font-family:Arial,sans-serif; font-size:12px; line-height:1.6; color:#8b949c; text-align:center;">
-          You're getting this because you subscribed on trvler.co.
-        </p>
-      </td>
-    </tr>
-
-    <!--
-      NO UNSUBSCRIBE LINK HERE ON PURPOSE.
-      beehiiv attaches its own unsubscribe + postal address footer below this
-      block automatically. It is a legal requirement (CAN-SPAM / CASL).
-
-      Postal address already set in beehiiv:
-      Trvler.co, 2150 Winston Park Dr Unit 203, PMB# 3074,
-      Oakville, ON L6H 5V1, Canada
-    -->
-
   </table>
-
-</td>
-</tr>
-</table>
-
-<!-- ============ PASTE UNTIL HERE ============ -->
-
 </body>
 </html>
